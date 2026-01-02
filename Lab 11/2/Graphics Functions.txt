@@ -1,0 +1,100 @@
+🎨 1. Drawing Functions
+Function	Purpose
+arc(x,y,stangle,endangle,radius)	Draw a circular arc.
+bar(left,top,right,bottom)	Draw a filled rectangle.
+bar3d(left,top,right,bottom,depth,topflag)	Draw a 3D bar (3D rectangle).
+circle(x,y,radius)	Draw a circle.
+cleardevice()	Clear the entire screen.
+clearviewport()	Clear only the current viewport.
+drawpoly(n, points[])	Draw an open polygon.
+ellipse(x,y,stangle,endangle,xr,yr)	Draw an ellipse.
+fillellipse(x,y,xr,yr)	Draw a filled ellipse.
+fillpoly(n, points[])	Draw a filled polygon.
+floodfill(x,y,border)	Flood fill an area with current fill color.
+line(x1,y1,x2,y2)	Draw a line between two points.
+linerel(dx,dy)	Draw line relative to current position.
+lineto(x,y)	Draw line from current position to a new point.
+pieslice(x,y,stangle,endangle,radius)	Draw a filled arc (pie slice).
+putpixel(x,y,color)	Color a single pixel.
+rectangle(left,top,right,bottom)	Draw a rectangle.
+sector(x,y,stangle,endangle,xr,yr)	Draw a filled elliptical sector.
+🔧 2. Miscellaneous Utility Functions
+Function	Purpose
+delay(ms)	Pause program for milliseconds.
+getarccoords(&coords)	Get last arc’s start/end points.
+getbkcolor()	Current background color.
+getcolor()	Current drawing color.
+getfillsettings(&info)	Current fill style.
+getlinesettings(&info)	Current line style.
+getmaxcolor()	Max color index (usually 15).
+getmaxheight()	Height of screen/window.
+getmaxwidth()	Width of screen/window.
+getmaxx() / getmaxy()	Max x/y coordinates.
+getpixel(x,y)	Gets pixel color at location.
+getviewsettings(&vp)	Gets viewport structure.
+getx(), gety()	Current graphics cursor position.
+moverel(dx,dy)	Move cursor relative.
+moveto(x,y)	Move cursor absolute.
+setbkcolor(color)	Set background color.
+setcolor(color)	Set drawing color.
+setfillstyle(pattern,color)	Set fill pattern.
+setlinestyle(style,pattern,thickness)	Set line style.
+setwritemode(mode)	Set image write mode (copy/xor/or/etc).
+🖼 3. Image Functions
+Function	Purpose
+imagesize(left,top,right,bottom)	Returns needed memory for an image.
+getimage(left,top,right,bottom,buffer)	Copies an image to memory.
+putimage(x,y,buffer,op)	Draws image onto screen.
+readimagefile(filename,l,t,r,b)	Load and draw an image file.
+writeimagefile(filename,l,t,r,b)	Save screen/area to file.
+printimage(...)	Print the image via printer dialog.
+📝 4. Text Functions
+Function	Purpose
+outtext("hello")	Print text at current position.
+outtextxy(x,y,"hello")	Print text at location.
+settextstyle(font,dir,size)	Change font and size.
+settextjustify(h,v)	Left/center/right & top/middle/bottom justify.
+gettextsettings(&info)	Get current text settings.
+textheight("text")	Pixel height of text.
+textwidth("text")	Pixel width of text.
+🖱 5. Mouse Functions
+Function	Purpose
+mousex(), mousey()	Get current mouse coordinates.
+ismouseclick(kind)	Check if mouse event occurred.
+getmouseclick(kind, x, y)	Get click coordinates.
+clearmouseclick(kind)	Clear stored mouse click.
+registermousehandler(kind, handler)	Attach function to mouse events.
+🪟 6. Window & Graphics Mode Functions
+Function	Purpose
+initwindow(width,height,title,left,top)	Create a WinBGI graphics window.
+closegraph(windowID)	Close one or all windows.
+graphdefaults()	Reset defaults.
+setgraphmode(mode)	Change graphics mode.
+restorecrtmode()	Return to console mode.
+detectgraph(&gdriver,&gmode)	Auto-detect graphics driver.
+🔁 7. Page Flipping / Double Buffering
+Function	Purpose
+setactivepage(page)	Select page to draw on.
+setvisualpage(page)	Select page to display.
+swapbuffers()	Swap active and visual buffers.
+
+Used for smooth animations.
+
+⌨ 8. Keyboard Functions
+Function	Purpose
+getch()	Wait for a key press.
+kbhit()	Check if a key is pressed.
+🎨 9. Palette Functions (Color Control)
+Function	Purpose
+getpalette(&p)	Read current palette.
+setpalette(index,color)	Change palette color.
+setrgbpalette(index,r,g,b)	Set a palette entry using RGB.
+getdefaultpalette()	Get default color palette.
+🗂 10. Structures Used in WinBGI
+Structure	Purpose
+arccoordstype	Stores last arc endpoints.
+fillsettingstype	Stores current fill style/color.
+linesettingstype	Stores current line style/thickness.
+textsettingstype	Stores current text style.
+viewporttype	Stores viewport limits.
+palettetype	Stores palette colors.

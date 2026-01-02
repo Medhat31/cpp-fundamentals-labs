@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1763632433 source:e:\iti\documents\05 - programming fundamentals\lab solution\6\main.cpp
+	<iostream>
+	<string.h>
+

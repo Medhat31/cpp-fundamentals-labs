@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1764866353 source:e:\iti\documents\05 - programming fundamentals & oop\lab solution\lab 12\4\main.cpp
+	<iostream>
+	<graphics.h>
+	<conio.h>
+

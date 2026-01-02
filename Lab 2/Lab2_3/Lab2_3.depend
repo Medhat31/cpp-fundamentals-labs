@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1763542510 source:e:\iti\documents\05 - programming fundamentals\lab solution\lab2_3\main.cpp
+	<iostream>
+	"C:\Program Files\CodeBlocks\MinGW\include\MyLibrary.h"
+
+1508714526 c:\program files\codeblocks\mingw\include\mylibrary.h
+	<windows.h>
+
